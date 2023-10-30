@@ -1,0 +1,45 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Montserrat', sans-serif
+
+.container
+    max-width: 1280px
+    margin: 0 auto
+
+=xl
+    @media screen and ( max-width: 1245px )
+        @content
+        
+=lg
+    @media screen and (max-width:992px)
+        @content
+=md       
+    @media screen and ( max-width:768px)
+        @content
+
+=sm  
+    @media screen and ( max-width:576px)
+        @content
+
+=xs
+    @media screen and ( max-width: 460px)
+        @content
+
+
+
+@import header
+@import modules
+@import price
+@import gazel
+@import reviews
+@import rezerv
+@import footer  
+
+      
+            
+
+

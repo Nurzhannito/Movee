@@ -1,0 +1,89 @@
+.reserv
+    max-width: 1002px
+    margin: 0 auto
+    padding-bottom: 140px
+    
+
+    &-title
+        font-weight: 600
+        font-size: 30px
+        line-height: 37px
+        color: #333333
+        padding: 124px 0 10px 0
+        +lg 
+            text-align: center
+        +sm 
+            font-size: 20px
+            line-height: 24px
+            padding: 62px 0 10px 0 
+
+    &-text 
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        color: #333333
+        +lg 
+            text-align: center
+        +sm 
+            padding-bottom: 50px
+
+    &-input
+        display: flex
+        justify-content: space-between
+        +lg 
+            display: flex
+            flex-direction: column
+            align-items: center
+  
+
+
+        &-name
+            max-width: 300px
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            padding-bottom: 10px
+            color: rgba(51, 51, 51, 0.7)
+            border: none
+            outline: none
+            border-bottom: 1px solid #333333
+            background: transparent
+            +lg 
+                margin: 10px 0
+            +sm 
+                margin-bottom: 50px
+
+        &-phone
+            @extend .reserv-input-name
+
+        &-button 
+            position: relative
+
+        &-border
+            width: 250px
+            height: 50px
+            position: absolute
+            border: 1px solid #FED100
+            top: 10px
+            left: 10px
+            +lg 
+                border: none 
+
+        &-btn 
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #F2F2F2
+            width: 250px
+            height: 50px
+            background: #FF352B
+            border: none
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            z-index: 1
+            +lg 
+                margin: 10px 0
+            +sm 
+                margin-top: 78px

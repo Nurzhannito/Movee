@@ -1,0 +1,68 @@
+.module-title
+    font-weight: 600
+    font-size: 30px
+    line-height: 37px
+    color: #333333
+    text-align: center
+    padding: 95px 0 60px 0
+    +sm 
+        font-size: 20px
+        line-height: 24px
+
+
+.modules
+    max-width: 1106px
+    margin: 0 auto
+    margin-bottom: 104px
+
+    &-section
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        list-style-type: none
+        counter-reset: Mymodules
+        +lg 
+            flex-direction: column
+            align-items: center
+    
+    &-info
+        width: 46%
+        +lg 
+            margin-bottom: 15px
+        +sm 
+            width: 100%
+            display: flex
+            align-items: center
+       
+
+    &-info::before
+        counter-increment: Mymodules
+        content: counter(Mymodules, decimal-leading-zero)
+        display: inline-block
+        font-weight: 300
+        font-size: 50px
+        line-height: 61px
+        color: #333333
+        text-shadow: 3px 0px #FED100
+        +sm 
+            padding-right: 25px
+    
+
+    &-title
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        color: #333333
+        padding-bottom: 15px
+        +sm 
+            font-size: 16px
+            line-height: 129.9%
+            padding-top: 25px
+
+    &-text
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        color: #333333
+        +sm 
+            display: none

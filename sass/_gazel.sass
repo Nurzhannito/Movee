@@ -1,0 +1,121 @@
+.gazel-title
+    font-weight: 600
+    font-size: 30px
+    line-height: 37px
+    color: #333333
+    padding-bottom: 15px
+    text-align: center
+
+.gazel-text
+    @extend .gazel-title
+    font-size: 24px
+    line-height: 29px
+    padding-bottom: 60px
+    +sm 
+        display: none
+
+.variant
+    text-align: center
+    +sm 
+        display: inline-block
+ 
+    &-gazel, &-heels, &-trucks
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        color: #333333
+        padding: 13px 63px
+        margin: 0 7px
+        border: 1px solid #EBEBEB
+        box-sizing: border-box
+        display: inline-block
+        +sm 
+            border: none
+            font-size: 16px
+            line-height: 20px
+
+    &-gazel:hover, 
+    &-heels:hover,
+    &-trucks:hover
+        border: 1px solid #FED100
+        +sm 
+            border: none
+            text-decoration: none
+            border-bottom: 1px solid #FED100
+
+.gazel-info
+    margin: 47px auto 0 auto
+    max-width: 850px
+    display: flex
+    justify-content: space-between
+    vertical-align: middle
+    +lg 
+        flex-direction: column
+
+    .gazel
+        +lg 
+            text-align: center
+        +sm 
+            display: none
+
+        &-headline
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #333333
+            padding: 50px 0 37px 0
+
+        &-features
+            font-weight: normal
+            font-size: 16px
+            line-height: 21px
+            color: #333333
+
+        // &-check-mark
+        //     width: 13.35px
+        //     height: 14px
+        //     background-image: url("../images/check-mark.png")
+        //     background-repeat: no-repeat
+        //     background-size: contain
+
+        &-button 
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            display: inline-block
+            padding: 13px 79px
+            background: #FED100
+            margin-top: 48px
+            +sm 
+                display: none
+
+    .gazel-image
+        +lg 
+            margin: 0 auto
+
+    .gazel-img
+        width: 100%
+
+    .additional-information
+        display: none
+        +sm 
+            display: block
+            text-align: center
+
+        &-title
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #333333
+            padding: 20px 0 80px 0
+
+        &-button 
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            padding: 17px 100px
+            background: #FED100
+            display: block
+            margin-bottom: 62.36px

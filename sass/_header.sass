@@ -1,0 +1,156 @@
+.promo
+    
+    background: url("../images/man-with-box.png") 55% bottom no-repeat, url("../images/bus.png") right center no-repeat
+    background-color: #FED100
+    padding: 40px 0 80px 0
+    +lg 
+        background: url("../images/man-with-box.png") center 150px no-repeat
+        background-color: #FED100
+        padding-bottom: 40px
+    +sm 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+    .header
+        padding: 0 10px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+
+        &-logo
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+            color: #333333
+            text-transform: uppercase
+
+        &-menu
+            +lg 
+                display: none
+
+            &-link
+                font-weight: 500
+                font-size: 18px
+                line-height: 22px
+                color: #333333
+                text-decoration: none
+                margin-right: 50px
+
+
+        &-phone
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #333333
+            text-decoration: underline
+            +lg 
+                display: none
+
+        &-burger
+            width: 44px
+            height: 30px
+            background: url("../images/menuBurger.png") center /cover no-repeat    
+            border: none  
+            display: none
+            +lg 
+                display: block   
+
+
+    &-info
+        padding: 0 10px
+
+        &-title
+            font-weight: bold
+            font-size: 70px
+            line-height: 126.9%
+            color: #333333
+            max-width: 480px
+            margin: 63px 0 23px 0
+            +sm 
+                font-size: 28px
+                line-height: 131.9%
+                text-align: center
+
+        &-text 
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+            color: #333333
+            margin-bottom: 50px
+            +sm 
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+
+        &-block
+            position: relative
+            +sm 
+                text-align: center
+
+        &-border
+            width: 304px
+            height: 60px
+            border: 2px solid #F2F2F2
+            box-sizing: border-box
+            position: absolute
+            top: 10px
+            left: 10px
+            +sm 
+                display: none
+
+        &-button
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #F2F2F2
+            background: #FF352B
+            width: 304px
+            height: 60px
+            border: none
+            position: relative
+            z-index: 1
+            transition: 0.5s
+            +sm 
+                margin-top: 450px
+                max-width: 100%
+           
+        &-button:active
+            transform: translate(10px, 10px)
+
+
+    .promo-icon
+        margin-top: 77px
+        display: flex
+        align-items: center
+        +sm 
+            display: none
+
+        &-subtitle
+            width: 185px
+            font-weight: normal
+            font-size: 16px
+            line-height: 21px
+            color: #333333
+            display: flex
+
+        &-subtitle::before
+            content: ""
+            min-width: 50px
+            min-height: 50px
+            display: block
+            margin-right: 10px
+            background-size: contain
+            background-position: center
+            
+        &-truck::before
+            background: url("../images/truck.png") no-repeat
+            background-size: contain
+
+        &-box::before
+            background: url("../images/gift.png") no-repeat
+
+        &-money::before
+            background: url("../images/money.png") no-repeat

@@ -1,0 +1,119 @@
+footer
+    width: 100%
+    min-height: 401px
+    background: #FED100
+
+    .footers-info
+        display: flex
+        justify-content: space-between
+        +lg 
+            flex-wrap: wrap
+
+        &-first
+            display: flex
+            flex-direction: column
+            +lg 
+                width: 48%
+                margin: 0 auto
+                +sm 
+                    width: 100%
+                    text-align: center
+
+        &-logo
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+            color: #333333
+            text-transform: uppercase
+            text-decoration: none
+            padding: 100px 0 44px 0
+
+        &-link
+            font-size: 16px
+            line-height: 130.4%
+            color: #0E0F12
+            padding-bottom: 36px
+
+        &-second
+            padding-top: 100px
+            display: flex
+            flex-direction: column
+            +lg 
+                width: 48%
+                margin: 0 auto
+                +sm 
+                    width: 100%
+                    text-align: center
+                    padding-top: 50px
+
+        &-menu
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            text-transform: capitalize
+            padding-bottom: 15px
+
+        &-third
+            padding-top: 100px
+            +sm 
+                margin: 0 auto
+                padding-top: 50px
+
+        &-icons
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+
+            .icon
+                width: 18px
+                height: 18px
+                display: inline-block
+                background-size: contain
+
+        &-youtube
+            background: url("../images/youtube.png")
+
+        &-vk
+            background: url("../images/vk.png")
+
+        &-face
+            background: url("../images/fb.png")
+
+        &-insta
+            background: url("../images/insta.png")
+
+        &-email
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            border-bottom: 1px solid #333333 
+         
+        &-fourth
+            padding-top: 100px
+            display: flex
+            flex-direction: column
+            +lg 
+                margin: 0 auto
+                +sm 
+                    padding-top: 50px
+                    text-align: center
+
+        &-button
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            padding: 10px 30px 10px 30px
+            border: 1px solid #333333
+            box-sizing: border-box
+
+        &-number
+            @extend .footers-info-email
+            text-align: center
+            padding-top: 7px
+            margin-bottom: 50px
+            border-bottom: 1px solid #333333    
+            +sm 
+                display: none  

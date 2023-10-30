@@ -1,0 +1,106 @@
+.title
+    font-weight: 600
+    font-size: 30px
+    line-height: 37px
+    color: #333333
+    text-align: center
+    margin-bottom: 15px
+    +sm 
+        display: none
+
+.title-text
+    @extend .title
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 60px
+
+.price
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 102px
+    +lg 
+        flex-direction: column
+        align-items: center
+
+    +sm 
+        margin-bottom: 40px
+
+    &-box
+        min-width: 32%
+        min-height: 579px
+        text-align: center
+        border: 1px solid #EBEBEB
+        box-sizing: border-box
+        padding-bottom: 93.36px
+        
+        +lg 
+            width: 100%
+            background: #F8FBFF
+            margin-bottom: 20px
+        +sm 
+            min-height: 535px
+            
+
+        &-main-title
+            display: none
+            +sm 
+                display: block
+                padding: 50px 0 40px 0
+
+
+        &-title
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #333333
+            padding: 84.14px 0 60.04px 0
+            +sm 
+                font-weight: 500
+                font-size: 18px
+                line-height: 22px
+                padding-bottom: 24px
+                padding-top: 0
+
+
+
+        &-subtitle
+            font-size: 16px
+            line-height: 21px
+            color: #333333
+            padding-bottom: 25.67px
+            +sm 
+                padding-bottom: 15px
+
+        &-money
+            font-weight: 600
+            font-size: 30px
+            line-height: 37px
+            color: #333333
+            padding: 48.44px 0 62.06px 0
+            +sm 
+                padding-top: 43.76px
+
+        &-button
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #333333
+            text-decoration: none
+            padding: 14.08px 77px
+            background: #FED100
+
+        &-all 
+            font-weight: 500
+            font-size: 16px
+            line-height: 131.4%
+            color: #333333
+            display: none
+            +sm 
+                display: block
+                margin: 37.36px 0 -50px 0
+                text-decoration: 1px solid #333333
+    
+    &-box:hover
+        border: 1px solid #FED100
+            
